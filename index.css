@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.kropp {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transform-origin: center center;
+
+    animation: jump 1s infinite;
+}
+
+
+.harm {
+    position: absolute;
+    width: 25px;
+    height: 80px;
+    border-radius: 20%;
+    transform: rotate(100deg) translateY(-0px);
+    background-color: blueviolet;
+    transform-origin: center bottom;
+
+    animation: jump 1s infinite;
+}
+
+.varm {
+    position: absolute;
+    width: 25px;
+    height: 80px;
+    border-radius: 20%;
+    transform: rotate(260deg) translateY(-0px);
+    background-color: blueviolet;
+    transform-origin: center bottom;
+
+    animation: jump 1s infinite;
+}
+
+.hbein {
+    position: absolute;
+    width: 25px;
+    height: 80px;
+    border-radius: 20%;
+    transform: rotate(160deg) translateY(-0px);
+    background-color: blueviolet;
+    transform-origin: center bottom;
+
+    animation: jump 1s infinite;
+}
+
+.vbein {
+    position: absolute;
+    width: 25px;
+    height: 80px;
+    border-radius: 20%;
+    transform: rotate(200deg) translateY(-0px);
+    background-color: blueviolet;
+    transform-origin: center bottom;
+
+    animation: jump 1s infinite;
+}
+
+.gulv {
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    border-radius: 30%;
+    background-color: grey;
+    bottom: 20%;
+
+    animation: wow 1s infinite;
+}
+
+@keyframes jump {
+    from {
+        bottom: 40%;
+        background-color: blueviolet;
+    }
+
+    to{
+        bottom: 50%;
+        background-color: crimson;
+    }
+}
+
+@keyframes wow {
+    from {
+        width: 150px;
+    }
+    
+    to {
+        width: 250px;
+    }
+}
